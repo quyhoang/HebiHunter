@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hebi Hunter Instructions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #4CAF50;
+        }
+        .instructions {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .controls div {
+            text-align: center;
+        }
+        .key {
+            font-size: 1.2em;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            display: inline-block;
+        }
+        .no-break {
+            white-space: nowrap;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Snake Game Instructions</h1>
+        <div class="instructions">
+            <div class="section">
+                <h2>Introduction</h2>
+                <p>Welcome to the snake game Hebi Hunter! In this game, you control a snake and try to eat as much food as possible to grow and score points. Avoid collisions with yourself to keep playing.</p>
+            </div>
+            <div class="section">
+                <h2>Game Setup</h2>
+                <p>Ensure you have the game executable file ready. Double-click the executable to start the game. The game will open in a new window.</p>
+            </div>
+            <div class="section">
+                <h2>Controls</h2>
+                <div class="controls">
+                    <div>
+                        <h3>Player 1 (Pink Snake)</h3>
+                        <p>Use the arrow keys to control the snake:</p>
+                        <div class="key">↑</div> - Move Up<br>
+                        <div class="key">↓</div> - Move Down<br>
+                        <div class="key">←</div> - Move Left<br>
+                        <div class="key">→</div> - Move Right
+                    </div>
+                    <div>
+                        <h3>Player 2 (Blue Snake)</h3>
+                        <p>Use the W, A, S, D keys to control the snake:</p>
+                        <div class="key">W</div> - Move Up<br>
+                        <div class="key">S</div> - Move Down<br>
+                        <div class="key">A</div> - Move Left<br>
+                        <div class="key">D</div> - Move Right
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Pause and Resume</h2>
+                <p>You can pause and resume the game by pressing the <div class="key no-break">Spacebar</div>. When the game is paused, the snakes will stop moving and the game will not progress until you press the spacebar again to resume.</p>
+            </div>
+            <div class="section">
+                <h2>Scoring</h2>
+                <p>The snakes can eat the food items that appear and move randomly on the screen. Each food item has a point value based on how long it has been on the screen. The point value decreases over time, so eat the food quickly to get the maximum points.</p>
+                <p>The current scores are displayed at the top of the screen, with Player 1 (Pink Snake) on the bottom and Player 2 (Blue Snake) on the top.</p>
+            </div>
+            <div class="section">
+                <h2>Winning the Game</h2>
+                <p>The game ends if the snake with the lower score collides with itself. If the snake with the higher score collides with itself, its score is reduced by one third and the game continues. The player with higher score at the end wins.</p>
+            </div>
+            <div class="section">
+                <h2>Game Data</h2>
+                <p>The game automatically saves the scores and winner of each game to a CSV file named <strong>game_data.csv</strong>. You can review past games and analyze performance using this file.</p>
+            </div>
+        </div>
+        <div class="footer">
+            ホアンとグエンより、富山の夏2024
+        </div>
+    </div>
+</body>
+</html>
